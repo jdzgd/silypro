@@ -11,7 +11,8 @@ spring:
 
 
 # mybatis
-mybatis.type-aliases-package=com.my.blog.website.dao
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.gk.entity
+#  type-aliases-package: com.gk.entity #此处也有可能扫描dao层
+  type-aliases-package: com.gk.repository #此处也有可能扫描dao层

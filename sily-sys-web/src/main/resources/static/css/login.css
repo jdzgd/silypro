@@ -1,0 +1,24 @@
+
+.wrapper {
+    height: 950px;
+    background-image: url('../img/loginbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+/*login div大小*/
+.login{
+    margin: auto;
+    width: 28%;
+}
+.register{
+    margin: auto;
+    width: 28%;
+}
+.login-icon {
+    /*width: 300px;*/
+    text-align: center;
+    margin: auto;
+}

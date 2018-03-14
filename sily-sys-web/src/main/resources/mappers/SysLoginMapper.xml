@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sily.dao.SysLoginDao">
+    <select id="selectByLoginName" parameterType="String" resultType="SysUser">
+        SELECT * FROM sys_user WHERE sys_user.account= #{account}
+    </select>
+
+    <insert id="insertLoginSysUser">
+        INSERT INTO sys_user(sys_user.account,sys_user.password) VALUES(#{account},#{password});
+    </insert>
+
+    <!-- 通过SysUser的id将SysUser的数据更新到数据库中对应的表,包括值null的数据-->
+    <update id="updateSysUserByUserId" parameterType="SysUser">
+        update sys_user set
+        qq=#{qq}
+        ,birthday=#{birthday}
+        ,name_pinyin=#{namePinyin}
+        ,address=#{address}
+        ,create_time=#{createTime}
+        ,user_name=#{userName}
+        ,sex=#{sex}
+        ,id_card=#{idCard}
+        ,wei_xin=#{weiXin}
+        ,remark=#{remark}
+        ,avatar=#{avatar}
+        ,staff_no=#{staffNo}
+        ,create_by=#{createBy}
+        ,password=#{password}
+        ,update_time=#{updateTime}
+        ,user_type=#{userType}
+        ,phone=#{phone}
+        ,enable=#{enable}
+        ,iposition=#{iposition}
+        ,dept_id=#{deptId}
+        ,update_by=#{updateBy}
+        ,account=#{account}
+        ,email=#{email}
+        where id=#{id}
+    </update>
+</mapper>

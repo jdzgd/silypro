@@ -1,0 +1,15 @@
+${AnsiColor.BRIGHT_GREEN}
+
+     ssssssss
+   ssss
+   ssss
+ssss
+ssss
+   ssssssssssss
+   ssssssssssss
+          ssss
+         ssss
+
+${AnsiColor.BLACK}
+Application Version: ${application.version}${application.formatted-version}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

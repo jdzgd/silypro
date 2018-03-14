@@ -11,5 +11,16 @@
 
     <artifactId>sily-sys-service</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.gk</groupId>
+            <artifactId>sily-sys-entity</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gk</groupId>
+            <artifactId>sily-sys-repository</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
